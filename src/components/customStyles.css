@@ -1,0 +1,82 @@
+
+
+@font-face {
+    font-family: 'Babas';
+    src: url('../fonts/381D1E_0_0.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/381D1E_0_0.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/381D1E_0_0.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/381D1E_0_0.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/381D1E_0_0.ttf')  format('truetype') /* Safari, Android, iOS */
+  }
+  @font-face {
+    font-family: 'PTSans';
+    src: url('../fonts/pts55f-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/pts55f-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/pts55f-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/pts55f-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/pts55f-webfont.ttf')  format('truetype') /* Safari, Android, iOS */
+  }
+  @font-face {
+    font-family: 'RopaSans';
+    src: url('../fonts/ropa.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/ropa.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/ropa.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/ropa.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/ropa.ttf')  format('truetype') /* Safari, Android, iOS */
+  }
+
+  h1{
+      margin-top: 150px;
+  }
+
+  p {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .desktop-menu {
+      font-family: PTSans, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .news-h1, h2 {
+      font-family: RopaSans, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .bm-burger-button {
+      display: none;
+  }
+
+.varavanner-menu-icon {
+    background-image: url("../images/varavanner-menu-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    padding-right: 40px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    
+}
+.varavanner-menu-icon span {
+    visibility: hidden;
+}
+.varavanner-menu-icon:hover {
+    -moz-transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+        filter: drop-shadow(2px 2px 2px gray);
+}
+.red-menu {
+    color: #E63F25 !important;
+}
+  @media only screen and (max-width: 1250px) {
+    .bm-burger-button {
+        display: block;
+    }
+    .desktop-menu {
+        display: none !important;
+    }
+  }
