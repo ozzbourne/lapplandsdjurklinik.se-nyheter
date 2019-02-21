@@ -2,8 +2,9 @@ import React, { Component } from "react"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 
-// import Img from "gatsby-image"
+// Detta fungerar som mall till alla "posts", dvs inlägg. 
 
 class PostTemplate extends Component {
     
@@ -17,7 +18,8 @@ class PostTemplate extends Component {
         {/* Om det finns featured image kommer den visas, annars returneras null. */}
         {media != null ? 
             <div>
-                <img src={media.source_url} alt={media.alt_text}/>
+                <Img fluid={media.localFile.childImageSharp.fluid} />
+                {/* {Utan Gatsby Image:  <img style={{width: "100%"}} src={media.source_url} alt={media.alt_text}/> */}
             </div> 
             : null}
         <div dangerouslySetInnerHTML={{ __html: post.content }} />
@@ -41,6 +43,13 @@ export const pageQuery = graphql`
       featured_media {
         source_url
         alt_text
+        localFile {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
     site {

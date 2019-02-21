@@ -6,6 +6,7 @@ import "./layout.css"
 import "./customStyles.css"
 
 const Layout = ({ children }) => (
+    // Standard Gatsby starter fil, med tillägg av klasser för att slide-in-mobil-menyn ska fungera.
       <div id="outer-container">
         <Header />
         <div 

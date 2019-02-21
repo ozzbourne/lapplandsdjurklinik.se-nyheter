@@ -1,3 +1,5 @@
+// Källa: https://www.gatsbyjs.org/packages/gatsby-source-wordpress/
+
 const _ = require(`lodash`)
 const Promise = require(`bluebird`)
 const path = require(`path`)

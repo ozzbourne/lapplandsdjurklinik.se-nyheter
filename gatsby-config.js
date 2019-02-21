@@ -1,4 +1,10 @@
 module.exports = {
+
+  // Om sidan ska ligga som subdomän ex; lapplandsdjurklinik.se/nyheter MÅSTE det ligga ett korrekt pathPrefix, annar länkas resurser direkt till huvud-domänet.
+  // I dagsläget endast under utveckling, då används detta väl kända begrepp "skosegnose".
+  pathPrefix: `/skosegnose`,
+
+
   siteMetadata: {
     title: `Nyheter`,
     description: `Getting data from WordPress into GatbyJS install.`,
@@ -15,6 +21,7 @@ module.exports = {
         hostingWPCOM: false,
         // does your site use the Advanced Custom Fields Plugin?
         useACF: true,
+        // Exkluderar en del information som inte behövs till detta projekt. Snabbar upp "gatsby develop" processen.
         excludedRoutes: [
           "**/*/*/categories",
           "**/*/*/pages",

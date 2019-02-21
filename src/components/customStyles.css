@@ -44,34 +44,7 @@
   .bm-burger-button {
       display: none;
   }
-
-.varavanner-menu-icon {
-    background-image: url("../images/varavanner-menu-icon.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 10px;
-    padding-right: 40px;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    
-}
-.varavanner-menu-icon span {
-    visibility: hidden;
-}
-.varavanner-menu-icon:hover {
-    -moz-transform: scale(1.02);
-        -webkit-transform: scale(1.02);
-        -o-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-        transform: scale(1.02);
-        filter: drop-shadow(2px 2px 2px gray);
-}
-.red-menu {
-    color: #E63F25 !important;
-}
+  
   @media only screen and (max-width: 1250px) {
     .bm-burger-button {
         display: block;
